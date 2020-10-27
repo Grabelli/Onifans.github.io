@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>OniFans</title>
+		<h1 style="color:red;">OniFans</h1>
+		<p style="color:white;">Input evidence to determine ghost</p>
+        <script language="javascript" type="text/javascript">
+			function dynamicdropdown(listindex)
+            {
+                document.getElementById("sub_subcategory").length = 0;
+                document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence 2","");
+                document.getElementById("subcategory").length = 0;
+                switch (listindex)
+                {
+                    case "Bx1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Orb","Ob2");
+                        document.getElementById("subcategory").options[2]=new Option("Finger Print","Pt2");
+						document.getElementById("subcategory").options[3]=new Option("Temperature","Tp2");
+                        document.getElementById("subcategory").options[4]=new Option("EMF lvl 5","EMF2");
+						document.getElementById("subcategory").options[5]=new Option("Ghost Book","Wt2");
+                        break;
+                    case "Ob1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Box","Bx2");
+                        document.getElementById("subcategory").options[2]=new Option("Finger Print","Pt3");
+						document.getElementById("subcategory").options[3]=new Option("Temperature","Tp3");
+                        document.getElementById("subcategory").options[4]=new Option("EMF lvl 5","EMF3");
+						document.getElementById("subcategory").options[5]=new Option("Ghost Book","Wt3");
+                        break;
+                    case "Pt1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Box","Bx3");
+                        document.getElementById("subcategory").options[2]=new Option("Spirit Orb","Ob3");
+						document.getElementById("subcategory").options[3]=new Option("Temperature","Tp4");
+                        document.getElementById("subcategory").options[4]=new Option("EMF lvl 5","EMF4");
+						document.getElementById("subcategory").options[5]=new Option("Ghost Book","Wt4");
+                        break;
+                    case "Tp1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Box","Bx4");
+                        document.getElementById("subcategory").options[2]=new Option("Spirit Orb","Ob4");
+						document.getElementById("subcategory").options[3]=new Option("Finger Print","Pt4");
+                        document.getElementById("subcategory").options[4]=new Option("EMF lvl 5","EMF5");
+						document.getElementById("subcategory").options[5]=new Option("Ghost Book","Wt5");
+                        break;
+                    case "EMF1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Box","Bx5");
+                        document.getElementById("subcategory").options[2]=new Option("Spirit Orb","Ob5");
+						document.getElementById("subcategory").options[3]=new Option("Finger Print","Pt5");
+                        document.getElementById("subcategory").options[4]=new Option("Temperature","Tp5");
+						document.getElementById("subcategory").options[5]=new Option("Ghost Book","Wt6");
+                        break;
+                    case "Wt1" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("subcategory").options[1]=new Option("Spirit Box","Bx6");
+                        document.getElementById("subcategory").options[2]=new Option("Spirit Orb","Ob6");
+						document.getElementById("subcategory").options[3]=new Option("Finger Print","Pt6");
+                        document.getElementById("subcategory").options[4]=new Option("Temperature","Tp6");
+						document.getElementById("subcategory").options[5]=new Option("EMF Lvl 5","EMF6");
+                        break;
+                    default:
+                        document.getElementById("subcategory").options[0]=new Option("Please select evidence","");
+                        break;
+                }
+            }
+            function dynamicdropdownone(listindex)
+            {
+                document.getElementById("sub_subcategory").length = 0;
+                switch (listindex)
+                {
+                    case "Ob2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Finger Print (Poltergeist)","Pol");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Mare)","Mare");
+						document.getElementById("sub_subcategory").options[3]=new Option("EMF Lvl 5 (Jinn)","Jinn");
+                        break;
+                    case "Pt2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Poltergeist)","Pol");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Wraith)","Wra");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Spirit)","Spi");
+                        break;
+                    case "Tp2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Mare)","Mare");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Finger Print (Wraith)","Wra");
+	                    document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Demon)","Dem");
+                        break;
+                    case "EMF2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Ghost Orb (Jinn)","Jinn");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Ghost Book (Oni)","Oni");
+                        break;
+                    case "Wt2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Finger Print (Spirit)","Spi");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Demon)","Dem");
+                        document.getElementById("sub_subcategory").options[3]=new Option("EMF Lvl 5 (Oni)","Oni");
+                        break;
+                    case "Bx2" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Finger Print (Poltergeist)","Pol");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Mare)","Mare");
+						document.getElementById("sub_subcategory").options[3]=new Option("EMF Lvl 5 (Jinn)","Jinn");
+                        break;
+                    case "Pt3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Poltergeist)","Pol");
+                        break;
+					case "Tp3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Mare)","Mare");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Phantom)","Pha");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Yurei)","Yur");
+                        break;
+                    case "EMF3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Jinn)","Jinn");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Phantom)","Pha");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Shade)","Sha");
+                        break;
+                    case "Wt3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Temperature (Yurei)","Yur");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Shade)","Sha");
+                        break;
+                    case "Bx3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Poltergeist)","Pol");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Wraith)","Wra");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Spirit)","Spi");
+                        break;
+                    case "Ob3" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Poltergeist)","Pol");
+                        break;
+					case "Tp4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Wraith)","Wra");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Banshee)","Ban");
+                        break;
+                    case "EMF4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Temperature (Banshee)","Ban");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Ghost Book (Revenant)","Rev");
+                        break;
+                    case "Wt4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Spirit)","Spi");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Revenant)","Rev");
+                        break;
+                    case "Bx4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Mare)","Mare");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Finger Print (Wraith)","Wra");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Demon)","Dem");
+						break;
+                    case "Ob4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Mare)","Mare");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Phantom)","Pha");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Yurei)","Yur");
+                        break;
+					case "Pt4" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Wraith)","Wra");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Banshee)","Ban");
+                        break;
+                    case "EMF5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Ghost Orb (Phantom)","Pha");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Finger Print (Banshee)","Ban");
+                        break;
+                    case "Wt5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Demon)","Dem");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Spirit Orb (Yurei)","Yur");
+                        break;
+                    case "Bx5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Jinn)","Jinn");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Ghost Book (Oni)","Oni");
+                        break;
+                    case "Ob5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Jinn)","Jinn");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Phantom)","Pha");
+						document.getElementById("sub_subcategory").options[3]=new Option("Ghost Book (Shade)","Sha");
+                        break;
+					case "Pt5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Temperature (Banshee)","Ban");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Ghost Book (Revenant)","Rev");
+                        break;
+                    case "Tp5" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Orb (Phantom)","Pha");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Finger Print (Banshee)","Ban");
+                        break;
+                    case "Wt6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Oni)","Oni");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Spirit Orb (Shade)","Sha");
+                        document.getElementById("sub_subcategory").options[3]=new Option("Finger Print (Revenant)","Rev");
+                        break;
+                    case "Bx6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Finger Print (Spirit)","Spi");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Temperature (Demon)","Dem");
+                        document.getElementById("sub_subcategory").options[3]=new Option("EMF Lvl 5 (Oni)","Oni");
+                        break;
+                    case "Ob6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Temperature (Yurei)","Yur");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Shade)","Sha");
+                        break;
+					case "Pt6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Spirit)","Spi");
+                        document.getElementById("sub_subcategory").options[2]=new Option("EMF Lvl 5 (Revenant)","Rev");
+                        break;
+                    case "Tp6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Demon)","Dem");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Spirit Orb (Yurei)","Yur");
+                        break;
+                    case "EMF6" :
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        document.getElementById("sub_subcategory").options[1]=new Option("Spirit Box (Oni)","Oni");
+                        document.getElementById("sub_subcategory").options[2]=new Option("Spirit Orb (Shade)","Sha");
+                        document.getElementById("sub_subcategory").options[3]=new Option("Finger Print (Revenant)","Rev");
+                        break;
+                    default:
+                        document.getElementById("sub_subcategory").options[0]=new Option("Please select evidence","");
+                        break;
+                }
+            }
+       </script>
+    </head>
+    <title>OniFans</title>
+    <body style="background-color:black;">
+	<style>
+		body {
+			background-image: url('https://3.bp.blogspot.com/-ftjOhBW6PVo/UG47d60bP0I/AAAAAAAABxY/16SEzc35Bx0/s1600/Skull+Wallpaper.jpg');
+		}
+	</style>
+        <div class="category_div" id="category_div" style="color:white;">Evidence 1:
+            <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="">Please select evidence</option>
+                <option value="Bx1">Spirit Box</option>
+                <option value="Ob1">Spirit Orb</option>
+                <option value="Pt1">Finger Print</option>
+                <option value="Tp1">Temperature</option>
+                <option value="EMF1">EMF Lvl 5</option>
+                <option value="Wt1">Ghost Book</option>
+            </select>
+        </div>
+        <div class="sub_category_div" id="sub_category_div" style="color:white;">Evidence 2:
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="subcategory" id="subcategory" onchange="javascript: dynamicdropdownone(this.options[this.selectedIndex].value);"><option value="">Please select evidence 1</option></select>')
+            </script>
+            <noscript>
+                <select name="subcategory" id="subcategory" >
+                    <option value="">Please select evidence</option>
+                </select>
+            </noscript>
+        </div>
+        <div class="sub_subcategory_div" id="sub_subcategory_div" style="color:white;">Evidence 3:
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="sub_subcategory" id="sub_subcategory"><option value="">Please select evidence 2</option></select>')
+            </script>
+            <noscript>
+                <select name="sub_subcategory" id="sub_subcategory" >
+                    <option value="">Please select evidence</option>
+                </select>
+            </noscript>
+        </div>
+		    <script type="text/javascript" language="JavaScript">
+				function display()
+				{
+					var cat1 = document.getElementById("category");
+					var cat2 = document.getElementById("subcategory");
+					var cat3 = document.getElementById("sub_subcategory");
+					if (cat1 = 'Bx1');
+						<noscript>
+						<p> test </p>
+						</noscript>
+				}
+            </script>
+</html>  
